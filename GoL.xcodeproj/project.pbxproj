@@ -11,6 +11,10 @@
 		382D1EB71CC11ED400C211E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 382D1EB61CC11ED400C211E7 /* Assets.xcassets */; };
 		382D1EBA1CC11ED400C211E7 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 382D1EB81CC11ED400C211E7 /* MainMenu.xib */; };
 		382D1EC51CC11ED400C211E7 /* GoLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382D1EC41CC11ED400C211E7 /* GoLTests.swift */; };
+		382D1ED01CC11F8F00C211E7 /* World.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382D1ECF1CC11F8F00C211E7 /* World.swift */; };
+		38FC4BC81CC26754000458E3 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FC4BC71CC26754000458E3 /* Utility.swift */; };
+		38FC4BCA1CC268D3000458E3 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FC4BC91CC268D3000458E3 /* Operators.swift */; };
+		38FC4BCC1CC2690D000458E3 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FC4BCB1CC2690D000458E3 /* Types.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +36,10 @@
 		382D1EC01CC11ED400C211E7 /* GoLTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoLTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		382D1EC41CC11ED400C211E7 /* GoLTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoLTests.swift; sourceTree = "<group>"; };
 		382D1EC61CC11ED400C211E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		382D1ECF1CC11F8F00C211E7 /* World.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = World.swift; sourceTree = "<group>"; };
+		38FC4BC71CC26754000458E3 /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		38FC4BC91CC268D3000458E3 /* Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
+		38FC4BCB1CC2690D000458E3 /* Types.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,9 +82,11 @@
 			isa = PBXGroup;
 			children = (
 				382D1EB41CC11ED400C211E7 /* AppDelegate.swift */,
-				382D1EB61CC11ED400C211E7 /* Assets.xcassets */,
-				382D1EB81CC11ED400C211E7 /* MainMenu.xib */,
-				382D1EBB1CC11ED400C211E7 /* Info.plist */,
+				38FC4BC91CC268D3000458E3 /* Operators.swift */,
+				38FC4BCB1CC2690D000458E3 /* Types.swift */,
+				38FC4BC71CC26754000458E3 /* Utility.swift */,
+				382D1ECF1CC11F8F00C211E7 /* World.swift */,
+				38FC4BCD1CC26AC3000458E3 /* Resources */,
 			);
 			path = GoL;
 			sourceTree = "<group>";
@@ -88,6 +98,16 @@
 				382D1EC61CC11ED400C211E7 /* Info.plist */,
 			);
 			path = GoLTests;
+			sourceTree = "<group>";
+		};
+		38FC4BCD1CC26AC3000458E3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				382D1EB61CC11ED400C211E7 /* Assets.xcassets */,
+				382D1EB81CC11ED400C211E7 /* MainMenu.xib */,
+				382D1EBB1CC11ED400C211E7 /* Info.plist */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,7 +210,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				382D1ED01CC11F8F00C211E7 /* World.swift in Sources */,
+				38FC4BCA1CC268D3000458E3 /* Operators.swift in Sources */,
 				382D1EB51CC11ED400C211E7 /* AppDelegate.swift in Sources */,
+				38FC4BCC1CC2690D000458E3 /* Types.swift in Sources */,
+				38FC4BC81CC26754000458E3 /* Utility.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,6 +399,7 @@
 				382D1ECB1CC11ED400C211E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		382D1ECC1CC11ED400C211E7 /* Build configuration list for PBXNativeTarget "GoLTests" */ = {
 			isa = XCConfigurationList;
@@ -383,6 +408,7 @@
 				382D1ECE1CC11ED400C211E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
